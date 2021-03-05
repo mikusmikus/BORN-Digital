@@ -53,7 +53,6 @@
     padding: 25px;
     @include about-font(18px, 700, $color-primary-light);
     @include flex-direction();
-    // letter-spacing: 1.1px;
     transition: all 0.2s;
     &:hover {
       color: $color-primary;
