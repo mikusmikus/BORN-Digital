@@ -212,6 +212,9 @@ body {
   max-width: 322px;
   width: 100%;
   margin: 16px 0; }
+  @media only screen and (max-width: 610px) {
+    .header__button-wrapper {
+      display: none; } }
 
 .hamburger {
   display: flex;
