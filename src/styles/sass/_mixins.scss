@@ -23,7 +23,7 @@
   color: $color
 }
 
-@mixin flex() {
+@mixin flex-wrap() {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

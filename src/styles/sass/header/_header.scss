@@ -10,7 +10,7 @@
 }
 
 .header {
-  @include flex();
+  @include flex-wrap();
   flex-wrap: nowrap;
   padding: 10px;
   align-items: center;
@@ -38,7 +38,7 @@
   flex-grow: 1;
   height: 100%;
   &__list {
-    @include flex();
+    @include flex-wrap();
     justify-content: flex-start;
     padding: 0;
     margin: 0;
