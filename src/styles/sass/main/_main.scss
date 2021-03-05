@@ -37,6 +37,10 @@
   position: relative;
   margin: 0 auto;
   max-width: 330px;
+  margin-right: 100px;
+  @include desktop{
+    margin: 0 auto;
+  }
 
   &__title {
     @include about-font(35px, 700, $color-primary-light);
