@@ -13,4 +13,7 @@
   @include tablet{
     width: 600px;
   }
+  @include phone{
+    max-width: 400px;
+  }
 }
