@@ -1,0 +1,299 @@
+.hero {
+  @include flex();
+  padding: 110px 10px;
+  &__about {
+    @include flex-basis(50%);
+    @include desktop{
+      @include flex-basis(100%);
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+  }
+  &__title {
+    font-family: "Sans", "Lato";
+    @include about-font(80px, 700, $color-secondary);
+    line-height: 90px;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  &__subtitle {
+    font-family: "Lato", "Mono";
+    @include about-font(25px, 700, $color-primary-light);
+    line-height: 38px;
+    margin-bottom: 94px;
+  }
+
+  &__form-wrapper {
+    @include flex-basis(50%);
+    @include desktop{
+      @include flex-basis(100%);
+      text-align: center;
+    }
+  }
+}
+
+.form {
+  @include flex-direction(column);
+  position: relative;
+  margin: 0 auto;
+  max-width: 330px;
+
+  &__title {
+    @include about-font(35px, 700, $color-primary-light);
+    font-family: "Sans", "Lato";
+    margin-bottom: 32px;
+    width: 100%;
+    text-align: left;
+  }
+  &__input {
+    @include about-font(20px, 300, $color-primary-dark);
+    font-family: "Lato";
+    width: 100%;
+    padding: 22px 20px 24px 20px;
+    max-height: 60px;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 5px;
+
+    &::placeholder {
+      @include about-font(20px, 300, $color-secondary-light);
+    }
+  }
+  &__checkbox {
+    width: 100%;
+    margin: 15px 0;
+    &-input {
+      position: absolute;
+      visibility: hidden;
+      &:checked + .form__checkbox-mark {
+        background-color: $color-primary;
+      }
+    }
+    &-label {
+      @include about-font(20px, 300, $color-primary-light);
+      padding-left: 40px;
+      position: relative;
+      margin: 0;
+      cursor: pointer;
+    }
+    &-mark {
+      @include flex-direction();
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 4px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+.features {
+  @include flex();
+  padding: 120px 10px;
+  &__about {
+    @include flex-basis(50%);
+    @include desktop{
+      @include flex-basis(100%);
+      text-align: center;
+      margin-bottom: 73px;
+    }
+    padding-top: 46px;
+    &--padding-left {
+      padding-left: 100px;
+      @include desktop{
+        padding-left: 0
+      }
+    }
+  }
+  &__title {
+    @extend %heading-2;
+    text-align: left;
+    @include desktop{
+      text-align: center;
+    }
+  }
+  &__subtitle {
+    @extend %paragraph;
+    max-width: 550px;
+    padding-bottom: 46px;
+    &-link {
+      color: $color-primary;
+      text-decoration: none;
+
+      @include hover(0.2) {
+        opacity: 0.8;
+      }
+    }
+    @include desktop{
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    margin-bottom: 73px;
+    @include about-font(20px, 700, $color-primary);
+    @include hover(0.2) {
+      opacity: 0.8;
+    }
+  }
+
+  &__image-wrapper {
+    @include flex-basis(50%);
+    position: relative;
+    text-align: left;
+    @include desktop {
+      @include flex-basis(100%);
+      min-height: 400px;
+      width: 100%;
+    }
+  }
+  &__image {
+    position: absolute;
+    &--bottom-right {
+      bottom: 0;
+      right: 0;
+    }
+    &--center-left {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    @include desktop {
+      left: 50%;
+      top: 50%;
+      transform:  translate(-50%, -50%);
+    }
+  }
+}
+
+.applications {
+  padding: 110px 0;
+  &__titles-wrapper {
+    width: 100%;
+    max-width: 501px;
+    margin: 0 auto;
+    margin-bottom: 133px;
+  }
+  &__title {
+    @extend %heading-2;
+  }
+  &__subtitle {
+    @extend %paragraph;
+    text-align: center;
+  }
+
+  .cards-wrapper {
+    @include flex();
+  }
+  .card {
+    position: relative;
+    flex-basis: calc(33.33% - 20px);
+    height: 100%;
+    min-height: 385px;
+    margin: 0 10px;
+    margin-bottom: 20px;
+    padding: 69px 29px;
+    overflow: hidden;
+    z-index: 1;
+    @include hover() {
+      box-shadow: 0 13px 32px rgba(0, 0, 0, 0.07);
+    }
+    &__image{
+      position: absolute;
+      left: 0;
+      top: 0;
+      object-fit: contain;
+      opacity: 0.3;
+      z-index: -1;
+    }
+    &__title {
+      @extend %heading-4;
+    }
+    &__link {
+      text-decoration: none;
+      @include about-font(16px, 700, $color-primary);
+      @include hover(0.2) {
+        opacity: 0.8;
+      }
+    }
+    @include desktop{
+      flex-basis: calc(50% - 20px);
+    }
+    @include phone {
+      flex-basis: calc(100% - 20px);
+    }
+  }
+}
+
+.partners {
+  padding: 100px 0;
+  .cards-wrapper {
+    @include flex();
+    margin-bottom: 100px;
+  }
+  .card {
+    margin: 0 10px;
+    width: calc(33.33% - 20px);
+    min-height: 528px;
+    box-shadow: 0 13px 32px rgba(0, 0, 0, 0.07);
+    @include hover(0.2) {
+      transform: translateY(-5px);
+    }
+    a {
+      padding: 56px 40px;
+      text-decoration: none;
+      height: 100%;
+      @include flex-direction(column, space-between, flex-start);
+    }
+    &__title {
+      @extend %heading-3;
+    }
+    @include desktop{
+      flex-basis: calc(50% - 20px);
+
+    }
+    @include tablet{
+      flex-basis: calc(100% - 20px);
+    }
+
+  }
+  &__logo-wrapper {
+    @include flex();
+    @include flex-direction(row);
+  }
+  &__logo {
+    margin: 20px;
+    max-width: 200px;
+  }
+}
+
+.info {
+  @include flex();
+  padding-bottom: 100px;
+  &__side {
+    @include flex-basis(50%);
+    @include flex-direction(column);
+    height: 100%;
+    min-height: 350px;
+    background-color: #eff8ff;
+  }
+  &__title {
+    @extend %heading-3;
+    text-align: center;
+    line-height: 75px;
+    &--primary-light {
+      color: $color-primary-light;
+    }
+  }
+}
+
+// media queries phone

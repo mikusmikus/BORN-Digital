@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/css/index.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="top-bg">
+    <header>
+      <div class="container">
+        <div class="header">
+          <a class="header__logo-wrapper" href="#">
+            <img
+              src="./src/assets/images/heading/logo.svg"
+              alt="logo"
+              class="header__logo"
+            />
+          </a>
+          <nav class="nav-bar">
+            <ul class="nav-bar__list">
+              <li class="nav-bar__item">
+                <a class="nav-bar__link" href="#"
+                  >Product
+                  <div class="popup">
+                    <ul class="popup__list">
+                      <li class="popup__item">Features</li>
+                      <li class="popup__item">Applications</li>
+                      <li class="popup__item">Application template</li>
+                      <li class="popup__item">Schedule a Demo</li>
+                    </ul>
+                  </div>
+                  <img
+                    class="nav-bar__link-arrow"
+                    src="./src/assets/images/heading/nav-arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+              </li>
+              <li class="nav-bar__item">
+                <a class="nav-bar__link" href="#">Pricing</a>
+              </li>
+              <li class="nav-bar__item">
+                <a class="nav-bar__link" href="#"
+                  >Learn
+                  <div class="popup">
+                    <ul class="popup__list">
+                      <li class="popup__item">Studying</li>
+                      <li class="popup__item">Learn from videos</li>
+                      <li class="popup__item">Join now</li>
+                      <li class="popup__item">Schedule a Demo</li>
+                    </ul>
+                  </div>
+                  <img
+                    class="nav-bar__link-arrow"
+                    src="./src/assets/images/heading/nav-arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+              </li>
+              <li class="nav-bar__item">
+                <a class="nav-bar__link" href="#">Support</a>
+              </li>
+              <li class="nav-bar__item">
+                <a class="nav-bar__link" href="#">Company</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__button-wrapper">
+            <button class="button button--transparent">Log In</button>
+            <button class="button">Create Free Account</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="hero">
+          <div class="hero__about">
+            <h1 class="hero__title">Engineer without Boundaries</h1>
+            <h3 class="hero__subtitle">
+              OnScale accelarates research and development, reduces costs and
+              helps engineers build better future
+            </h3>
+            <!-- paskatit vai klases vajag šeit -->
+            <div class="hero__icons-wrapper">
+              <img
+                src="./src/assets/images/hero/hero__icons.png"
+                alt="hero icons"
+                class="hero__icons"
+              />
+            </div>
+          </div>
+          <div class="hero__form-wrapper">
+            <form class="form">
+              <label class="form__title"> Get Started For Free </label>
+              <input
+                type="text"
+                class="form__input"
+                required
+                placeholder="Name"
+              /><input
+                type="email"
+                class="form__input"
+                required
+                placeholder="E-mail"
+              /><input
+                type="password"
+                class="form__input"
+                required
+                placeholder="Password"
+              />
+              <div class="form__checkbox">
+                <label for="create-account" class="form__checkbox-label">
+                  <input
+                    type="checkbox"
+                    class="form__checkbox-input"
+                    id="create-account"
+                  />
+                  <span class="form__checkbox-mark"
+                    ><img
+                      src="./src/assets/images/hero/checkmark.svg"
+                      alt="checkmark"
+                  /></span>
+                  I agree to the OnScale Terms
+                </label>
+              </div>
+              <button type="submit" class="button form__button">
+                Create Free Account
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+    <section>
+      <div class="container">
+        <div class="features">
+          <div class="features__about">
+            <h2 class="features__title">
+              Multiphysics, <br />
+              All-Inclusive CAE
+            </h2>
+            <p class="features__subtitle">
+              All multi-physics solver component and databases are included:
+              <a href="#" class="features__subtitle-link">mechanical</a>,
+              <a href="#" class="features__subtitle-link">electrical</a>,
+              <a href="#" class="features__subtitle-link">electrostatic</a>,
+              <a href="#" class="features__subtitle-link">piezoelectric</a>,
+              <a href="#" class="features__subtitle-link">thermal</a>, all fully
+              coupled. No additional modules, hidden or license fees.
+            </p>
+            <a class="features__link" href="#">See all features</a>
+          </div>
+          <div class="features__image-wrapper">
+            <img
+              src="./src/assets/images/features/features-multiphysics.png"
+              alt="multiphysics"
+              class="features__image features__image--bottom-right"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bg-light-grey">
+        <div class="container">
+          <div class="features">
+            <div class="features__image-wrapper">
+              <img
+                src="./src/assets/images/features/features-multiphysics.png"
+                alt="computer"
+                class="features__image features__image--center-left"
+              />
+            </div>
+            <div class="features__about">
+              <h2 class="features__title">Easy to Setup, Free to Use</h2>
+              <p class="features__subtitle">
+                Easily deploy OnScale across your entire team without worrying
+                about licenses, HPC setup, or data storage. And you can
+                <a href="#" class="features__subtitle-link"
+                  >Start with a Free Account</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="features">
+          <div class="features__about">
+            <h2 class="features__title">
+              Unmatched Speed <br />
+              with Cloud HPC
+            </h2>
+            <p class="features__subtitle">
+              All multi-physics solver component and databases are included:
+              mechanical, electrical, electrostatic, piezoelectric, thermal, all
+              fully coupled. No additional modules, hidden or license fees
+            </p>
+            <!-- paskatit vai klases vajag šeit -->
+            <div class="features__icons-wrapper">
+              <img
+                src="./src/assets/images/hero/hero__icons.png"
+                alt="feature icons"
+                class="features__icons"
+              />
+            </div>
+          </div>
+          <div class="features__image-wrapper">
+            <img
+              src="./src/assets/images/features/features-speed.png"
+              alt="speed"
+              class="features__image features__image--bottom-right"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bg-light-blue">
+        <div class="container">
+          <div class="features">
+            <div class="features__image-wrapper">
+              <img
+                src="./src/assets/images/features/features-support.png"
+                alt="support"
+                class="features__image features__image--center-left"
+              />
+            </div>
+            <div class="features__about features__about--padding-left">
+              <h2 class="features__title">World-Class Customer Support</h2>
+              <p class="features__subtitle">
+                Our
+                <a href="#" class="features__subtitle-link">Help Center</a> is
+                equipped with everything you need to help you from the start to
+                finish, starting with documentation, tutorials, examples and
+                <a href="#" class="features__subtitle-link">forum</a>. *Premium
+                support includes full project support by specialist engineers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="applications">
+          <div class="applications__titles-wrapper">
+            <h2 class="applications__title">Applications</h2>
+            <p class="applications__subtitle">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+          </div>
+          <div class="cards-wrapper">
+            <div class="card">
+              <img class="card__image" src="./src/assets/images/applications/card-image.jpg" alt="card bg">
+              <h4 class="card__title">MEMS & Filters</h4>
+              <a href="#" class="card__link">Learn more</a>
+            </div>
+            <div class="card">
+              <img class="card__image" src="./src/assets/images/applications/card-image.jpg" alt="card bg">
+              <h4 class="card__title">Sensores</h4>
+              <a href="#" class="card__link">Learn more</a>
+              
+            </div>
+            <div class="card">
+              <img class="card__image" src="./src/assets/images/applications/card-image.jpg" alt="card bg">
+              <h4 class="card__title">NDE & NDT</h4>
+              <a href="#" class="card__link">Learn more</a>
+            </div>
+            <div class="card">
+              <img class="card__image" src="./src/assets/images/applications/card-image.jpg" alt="card bg">
+              <h4 class="card__title">Medical</h4>
+              <a href="#" class="card__link">Learn more</a>
+            </div>
+            <div class="card">
+              <img class="card__image" src="./src/assets/images/applications/card-image.jpg" alt="card bg">
+              <h4 class="card__title">Sonar</h4>
+              <a href="#" class="card__link">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section>
+      <div class="container">
+        <div class="partners">
+          <div class="cards-wrapper">
+            <div class="card">
+              <a href="#">
+                <h3 class="card__title">
+                  Solving the Toughest Engineering Challenges with HPC
+                </h3>
+                <img src="./src/assets/images/partners/cio-logo.png" alt="CIO" />
+              </a>
+            </div>
+
+            <div class="card">
+              <a href="#">
+                <h3 class="card__title">
+                  Engineering Startup OnScale Raises $3 Million Seed
+                </h3>
+                <div>
+                  <img src="./src/assets/images/partners/wsj-logo.png" alt="WSJ" />
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <a href="#">
+                <h3 class="card__title">
+                  20 Most Promising HPC Solution Providers - 2018
+                </h3>
+                <img src="./src/assets/images/partners/cio-logo.png" alt="CIO" />
+              </a>
+            </div>
+          </div>
+
+          <div class="partners__logo-wrapper">
+            <img
+              src="./src/assets/images/partners/fmc-logo.png"
+              alt="aaa"
+              class="partners__logo"
+            />
+            <img
+              src="./src/assets/images/partners/siemenes-logo.png"
+              alt="aaa"
+              class="partners__logo"
+            />
+            <img
+              src="./src/assets/images/partners/university-logo.png"
+              alt="aaa"
+              class="partners__logo"
+            />
+
+            <img
+              src="./src/assets/images/partners/tyco-logo.png"
+              alt="aaa"
+              class="partners__logo"
+            />
+            <img
+              src="./src/assets/images/partners/fda-logo.png"
+              alt="aaa"
+              class="partners__logo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="info">
+        <div class="info__side bg-primary">
+          <h3 class="info__title info__title--primary-light">
+            Ready to Get Started
+          </h3>
+          <button class="button button--large button--primary-light">
+            Create Free Account
+          </button>
+        </div>
+        <div class="info__side">
+          <h3 class="info__title">Want to See Hot it Works</h3>
+          <button class="button button--large">request a Demo</button>
+        </div>
+      </div>
+    </section>
+    h1asfsdfsdgf
+  </body>
+</html>

@@ -1,0 +1,25 @@
+
+%heading-2 {
+    line-height: 75px;
+    @include about-font(60px, 600, $color-secondary-dark);
+    text-align: center;
+    margin: 0 0 3rem 0;
+}
+
+%heading-3 {
+    line-height: 55px;
+    margin: 0 0 2rem 0;
+    @include about-font(40px, 700, $color-secondary-dark);
+}
+
+%heading-4 {
+    line-height: 40px;
+    margin: 0 0 1.5rem 0;
+    @include about-font(30px, 700, $color-secondary-dark)
+}
+
+%paragraph {
+    @include about-font(20px, 300, $color-secondary-light);
+    margin: 0;
+    line-height: 34px;
+}

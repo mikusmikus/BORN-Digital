@@ -1,0 +1,54 @@
+
+@mixin hover($time: 0.2) {
+   transition: all #{$time}s ;
+  &:hover{
+    @content;
+  }
+}
+@mixin flex-basis($percent) {
+    flex-basis: $percent;
+    width: $percent;
+    flex: 0 0 auto
+}
+@mixin flex-direction($direction : row, $justify-content: center, $align-items: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin about-font($size : 1em, $weight: 400, $color: $color-primary-dark) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color
+}
+
+@mixin flex() {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+@mixin large-desktop($width : 1310px) {
+  @media only screen and (max-width: $width) {
+     @content;
+  }
+}
+
+@mixin desktop($width : 1110px) {
+  @media only screen and (max-width: $width) {
+     @content;
+  }
+}
+
+@mixin tablet($width : 810px) {
+  @media only screen and (max-width: $width) {
+     @content;
+  }
+}
+
+@mixin phone($width : 610px) {
+  @media only screen and (max-width: $width) {
+     @content;
+  }
+}

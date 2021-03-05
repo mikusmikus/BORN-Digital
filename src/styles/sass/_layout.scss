@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: block;
+  
+  @include large-desktop{
+    width: 1100px;
+  }
+  @include desktop{
+    width: 800px;
+  }
+  @include tablet{
+    width: 600px;
+  }
+}

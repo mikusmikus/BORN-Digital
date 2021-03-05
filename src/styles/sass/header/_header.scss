@@ -1,0 +1,119 @@
+.top-bg {
+  background: url("../../assets/images/hero/hero-bg.png") no-repeat center;
+  background-size: cover;
+  animation: animatedBackground 10s linear infinite alternate;
+}
+@keyframes animatedBackground {
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.header {
+  @include flex();
+  flex-wrap: nowrap;
+  padding: 10px;
+  align-items: center;
+  @include desktop {
+   justify-content: space-between;
+  }
+}
+
+.header__logo-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 160px;
+  height: 36px;
+  margin-bottom: 16px;
+  margin-right: 43px;
+}
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-bar {
+  flex-grow: 1;
+  height: 100%;
+  &__list {
+    @include flex();
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+    list-style: none;
+    cursor: pointer;
+  }
+  &__link {
+    position: relative;
+    text-decoration: none;
+    padding: 25px;
+    @include about-font(18px, 700, $color-primary-light);
+    @include flex-direction();
+    // letter-spacing: 1.1px;
+    transition: all 0.2s;
+    &:hover {
+      color: $color-primary;
+    }
+    &:hover > &-arrow {
+      transform: rotate(90deg);
+    }
+    &:hover > .popup {
+      visibility: visible;
+    }
+    &-arrow {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      right: 8px;
+      top: 50%;
+      transform: rotate(180deg) translateY(50%);
+      transition: transform 0.2s;
+    }
+  }
+  @include desktop {
+    @include flex-basis(100%);
+    display: none;
+  }
+}
+
+.popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-width: 350px;
+  background-color: #edf0f3;
+  visibility: hidden;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include flex-direction(column, center, left);
+  }
+  &__item {
+    @include about-font(18px, 700, $color-primary);
+    padding: 32px 22px;
+    transition: color 0.2s, background-color 0.2s;
+    &:hover {
+      color: $color-primary-light;
+      background-color: $color-primary;
+    }
+  }
+}
+
+.nav-bar__item:hover > .popup {
+  visibility: visible;
+  background-color: red;
+}
+
+.header__button-wrapper {
+  @include flex-direction(row, space-between);
+  max-width: 322px;
+  width: 100%;
+  margin: 16px 0;
+}
