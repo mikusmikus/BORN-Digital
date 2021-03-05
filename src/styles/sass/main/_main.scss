@@ -36,8 +36,8 @@
   @include flex-direction(column);
   position: relative;
   margin: 0 auto;
-  max-width: 330px;
   margin-right: 100px;
+  max-width: 330px;
   @include desktop{
     margin: 0 auto;
   }

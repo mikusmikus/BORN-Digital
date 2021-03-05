@@ -297,8 +297,8 @@ body {
   align-items: center;
   position: relative;
   margin: 0 auto;
-  max-width: 330px;
-  margin-right: 100px; }
+  margin-right: 100px;
+  max-width: 330px; }
   @media only screen and (max-width: 1110px) {
     .form {
       margin: 0 auto; } }
